@@ -37,8 +37,8 @@ var listPicturesSolution = new Array(lengthSession);
 // make the list
 var i = 0;
 for (value in sessionOrder) {
-     listPictures[i] = path2Pictures+ 'Cepe_' + sessionOrder[value] + '_A.jpg'
-     listPicturesSolution[i] = path2Pictures+ 'Cepe_' + sessionOrder[value] + '_S.jpg'
+     listPictures[i] = path2Pictures+ 'Cepe_' + sessionOrder[value] + '_A.***'
+     listPicturesSolution[i] = path2Pictures+ 'Cepe_' + sessionOrder[value] + '_S.***'
 
      i +=1
 }
