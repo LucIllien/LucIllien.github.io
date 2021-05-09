@@ -1,0 +1,407 @@
+/* VERY BASIC STYLES */
+
+
+h1 {
+  font-style: normal;
+  padding-bottom: 100px;
+  max-width: 400 px;
+  height: auto;
+}
+
+body {
+  /*background-image: url('./images/background_2.jpg');*/
+  background-color: black;
+  background-position: center;
+background-repeat: repeat;
+background-attachment: scroll;
+}
+
+#precisionFrame {
+  position: relative;
+  background-color: green;
+  display: none;
+  height:23%;
+  width:70%;
+  /*background:#fff;*/
+  border: solid black;
+  border-color: black;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(-2deg);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   font-family:"Lucida Console", "Courier New", monospace;
+   font-size:30px;
+   text-align: center;
+}
+
+
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+
+
+/* convention for containers */
+* {box-sizing:border-box}
+
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+/*   background-color: 	#556B2F	;*/
+  background: linear-gradient(to left, #a0522d 0%, 	#006400 100%);
+  /*padding: 0px 68px 20px 68px; */
+  padding: 0px 0px 20px 0px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+
+
+.banner-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  /*background-color: black;*/
+  padding: 0px;
+}
+
+.banner-containerStart {
+  max-width: 1000px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  /*background-color: black;*/
+  padding: 400px 0px 0px 0px;
+}
+
+
+#buttonStart {
+  background-color: transparent;
+  border: none;
+  background-image:url("./images/logoVer2.svg");
+  background-size: cover;
+  position:absolute;
+   top: 87%;
+   left: 45.7%;
+   width: 8%;
+   height: 9%
+}
+
+#buttonStart:hover {
+  background-image:url("./images/logoVer3.svg");
+}
+
+.startGame-button {
+  background-color: transparent;
+  border: none;
+  background-image:url("./images/logoVer2.svg");
+  background-size: cover;
+  position:absolute;
+   top: 38.5%;
+   left: 84%;
+   width: 3%;
+   height: 3.996%
+}
+
+
+
+.buttonsGood {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    cursor: url(./testCursor.png), auto;
+
+}
+
+.mySlidesFade {
+  max-width: 1000px;
+  position: relative;
+  cursor: url(./testCursor.png), auto;
+
+}
+
+
+
+
+/* Hide the images by default */
+/*.mySlides {
+    display: none;
+}*/
+
+
+/* Class for icons */
+.good, .wrong  {
+position:absolute;
+cursor: pointer;
+top: 100px;
+left: 50px;
+cursor: url(./testCursor.png), auto;
+
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 10px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 10px;
+  border-radius: 0px 10px 0px 10px;
+}
+
+#suivant {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  right: 20px;
+  font-size: 24px;
+}
+
+
+
+[class*="A"] {
+    color: green;
+    display: none;
+    border: none;
+    /*background-image:url("./images/logoVer2.svg");*/
+    background-size: cover;
+    background-color: transparent;
+    outline:none;
+    cursor: url(./testCursor.png), auto;
+}
+
+[class*="B"] {
+    color: red;
+    display: none;
+    background-color: transparent;
+    border: none;
+    /*background-image:url("./images/logoVer2.svg");*/
+    background-size: cover;
+    outline:none;
+    cursor: url(./testCursor.png), auto;
+
+}
+
+/*
+[class*="A"]:hover{
+  transform:scale(1.3,1.3);
+  cursor: pointer;
+}
+
+[class*="B"]:hover {
+  transform:scale(1.3,1.3);
+  cursor: pointer;
+}
+*/
+
+
+.selectedA{
+  background-color: transparent;
+  border: none;
+  background-image:url("./images/logoVer3.svg");
+  background-size: cover;
+  cursor: url(./testCursor.png), auto;
+}
+
+.selectedB{
+  background-color: transparent;
+  border: none;
+  background-image:url("./images/logoVer3.svg");
+  background-size: cover;
+  cursor: url(./testCursor.png), auto;
+}
+
+
+.off{
+  display: none;
+  background-color: transparent;
+  border: none;
+  background-image:url("./images/logoVer3.svg");
+  background-size: cover;
+  cursor: url(./testCursor.png), auto;
+
+}
+
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(2, 149, 14, 0.7);
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(2, 149, 14, 0.7);
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+
+
+
+.bottom_container{
+  max-width: 1000px;
+  position: relative;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+
+#farmer{
+  width:100%;
+  position:relative;
+  left:10%;
+  padding-top: 20px;
+}
+
+
+#cut{
+  position:relative;
+  text-align: center;
+  padding-top: 2%;
+  display: none;
+}
+
+#cutButton{
+    /*font-size: 24px;*/
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#cutButton:hover{
+transform:scale(1.1,1.1);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* dots 2 prepare? */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

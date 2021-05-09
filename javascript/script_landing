@@ -1,0 +1,7 @@
+function playAudio(url)  {
+  new Audio(url).play();
+  if (url.includes('wrong')){
+    clicksBad += 1;
+  }
+}
+playAudio("./javascript/sounds/wellDone.wav")

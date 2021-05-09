@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> VitiGame </title>
+    <link rel="stylesheet" href="./css/master.css" media="screen" type="text/css">
+  </head>
+
+<body>
+<!-- <h1> <B>Le Jeu de la Vigne</B> </h1> -->
+
+<div class="banner-container">
+  <img id="banner" src="./css/images/banner2.svg"  style= " max-width: 1000px; position: relative; margin:auto">
+</div>
+
+
+<main>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlidesFade" >
+
+
+      <img id="gameImage" src="./Cepe_Buttons/Pictures/Cepe_1_A.jpg"  onclick=playAudio("./javascript/sounds/wrong.wav")  style="width:100%; position: relative ">
+
+        <!--<div class="buttonsGood">-->
+
+
+          <div  id="precisionFrame" onclick="initialiseGame(listPictures)" style="position: absolute; top: 30%; left: 20%">Ta precision est de 30 %</div>
+
+          <button class="A1" style="position: absolute; top: 38.5%; left: 84%; width: 3%; height: 3.996%"></button>
+          <button class="A1"  style="position: absolute; top: 35%; left: 30%; width: 3%; height: 3.996%"></button>
+          <button class="A1"  style="position: absolute; top: 32%; left: 32%; width:4%;height: 5.33% "></button>
+
+          <button class="A2" style="position: absolute; top: 54%; left: 31%; width: 3%; height: 3.996%"></button>
+          <button class="A2" style="position: absolute; top: 50%; left: 42%; width: 4%; height: 5.33%"></button>
+          <button class="A2" style="position: absolute; top: 47%; left: 79%; width: 3%; height: 3.996%"></button>
+          <button class="A2" style="position: absolute; top: 44%; left: 74%; width: 3%; height: 3.996%"></button>
+
+          <button class="A3" style="position: absolute; top: 35%; left: 18%; width: 3%; height: 3.996%"></button>
+          <button class="A3" style="position: absolute; top: 37%; left: 26%; width: 3%; height: 3.996%"></button>
+          <button class="A3" style="position: absolute; top: 41.5%; left: 27.3%; width: 3%; height: 3.996%"></button>
+          <button class="A3" style="position: absolute; top: 46%; left: 68%; width: 3%; height: 3.996%"></button>
+
+          <button class="A4" style="position: absolute; top: 13%; left: 17.2%; width: 3%; height: 3.996%"></button>
+          <button class="A4" style="position: absolute; top: 26%; left: 25%; width: 4%; height: 5.33%"></button>
+          <button class="A4" style="position: absolute; top: 31.5%; left: 28%; width: 3%; height: 3.996%"></button>
+          <button class="A4" style="position: absolute; top: 32%; left: 82%; width: 4%; height: 5.33%"></button>
+
+          <button class="A5" style="position: absolute; top: 38%; left: 24%; width: 3%; height: 3.996%"></button>
+          <button class="A5" style="position: absolute; top: 37%; left: 26.5%; width: 3%; height: 3.996%"></button>
+          <button class="A5" style="position: absolute; top: 31%; left: 88.5%; width: 3%; height: 3.996%"></button>
+
+          <button class="A6" style="position: absolute; top: 39%; left: 33.2%; width: 3%; height: 3.996%"></button>
+          <button class="A6" style="position: absolute; top: 39%; left: 36%; width: 3%; height: 3.996%"></button>
+          <button class="A6" style="position: absolute; top: 40%; left: 37.5%; width: 3%; height: 3.996%"></button>
+          <button class="A6" style="position: absolute; top: 40%; left: 69%; width: 3%; height: 3.996%"></button>
+
+          <button class="A7" style="position: absolute; top: 31%; left: 21.8%; width: 3%; height: 3.996%"></button>
+          <button class="A7" style="position: absolute; top: 38%; left: 23.8%; width: 3%; height: 3.996%"></button>
+          <button class="A7" style="position: absolute; top: 38%; left: 26.2%; width: 3%; height: 3.996%"></button>
+          <button class="A7" style="position: absolute; top: 46.6%; left: 68.5%; width: 3%; height: 3.996%"></button>
+          <button class="A7" style="position: absolute; top: 48%; left: 64.3%; width: 3%; height: 3.996%"></button>
+
+          <button class="A8" style="position: absolute; top: 46%; left: 18.5%; width: 3%; height: 3.996%"></button>
+          <button class="A8" style="position: absolute; top: 58%; left: 30%; width: 3%; height: 3.996%"></button>
+          <button class="A8" style="position: absolute; top: 49%; left: 35%; width: 3%; height: 3.996%"></button>
+          <button class="A8" style="position: absolute; top: 52.5%; left: 34%; width: 3%; height: 3.996%"></button>
+          <button class="A8" style="position: absolute; top: 37.5%; left: 73%; width: 3%; height: 3.996%"></button>
+
+          <button class="A9" style="position: absolute; top: 37.5%; left: 22.5%; width: 3%; height: 3.996%"></button>
+          <button class="A9" style="position: absolute; top: 39%; left: 27%; width: 3%; height: 3.996%"></button>
+          <button class="A9" style="position: absolute; top: 42.5%; left: 33%; width: 3%; height: 3.996%"></button>
+          <button class="A9" style="position: absolute; top: 46.5%; left: 76%; width: 3%; height: 3.996%"></button>
+
+          <button class="A10" style="position: absolute; top: 35%; left: 11%; width: 3%; height: 3.996%"></button>
+          <button class="A10" style="position: absolute; top: 52%; left: 28%; width: 3%; height: 3.996%"></button>
+          <button class="A10" style="position: absolute; top: 48%; left: 30%; width: 3%; height: 3.996%"></button>
+          <button class="A10" style="position: absolute; top: 41%; left: 87%; width: 3%; height: 3.996%"></button>
+
+          <button class="A11" style="position: absolute; top: 51%; left: 25.5%; width: 3%; height: 3.996%"></button>
+          <button class="A11" style="position: absolute; top: 41.5%; left: 16.5%; width: 3%; height: 3.996%"></button>
+          <button class="A11" style="position: absolute; top: 46.5%; left: 23%; width: 3%; height: 3.996%"></button>
+          <button class="A11" style="position: absolute; top: 48.5%; left: 64%; width: 3%; height: 3.996%"></button>
+
+          <button class="A12" style="position: absolute; top: 49.5%; left: 29%; width: 3%; height: 3.996%"></button>
+          <button class="A12" style="position: absolute; top: 52.5%; left: 32.5%; width: 3%; height: 3.996%"></button>
+          <button class="A12" style="position: absolute; top: 36%; left: 47%; width: 3%; height: 3.996%"></button>
+          <button class="A12" style="position: absolute; top: 54.5%; left: 80%; width: 3%; height: 3.996%"></button>
+
+
+
+
+          <button class="A13"  style="position: absolute; top: 53%; left: 14%; width: 5%; height: 6.66%"></button>
+          <button class="A13"  style="position: absolute; top: 46%; left: 15%; width: 5%; height: 6.66%"></button>
+          <button class="A13"  style="position: absolute; top: 53%; left: 28%; width:5%;height: 6.66% "></button>
+          <button class="A13"  style="position: absolute; top: 50%; left: 30%; width: 5%; height: 6.66%"></button>
+          <button class="A13"  style="position: absolute; top: 47%; left: 33%; width: 5%; height: 6.66%"></button>
+          <button class="A13"  style="position: absolute; top: 45%; left: 65%; width:5%;height: 6.66% "></button>
+
+      <!--  </div>-->
+
+    </div>
+
+    <!-- <div class="text">Sauvignon du Seigneur</div> -->
+
+    <!-- Next and previous buttons -->
+    <!--<a class="prev" onclick="nextCepe(-1)">&#10094;</a>-->
+    <!--<a class="next" onclick="nextCepe(1)">&#10095;</a>-->
+    <button id="suivant" onclick="newCombi(1)" >NEXT !</button>
+
+
+    <div class="bottom_container">
+
+     <div id="farmer">
+       <img  id='farmerImage' src="./css/images/farmer1_norm.svg"  style=" width: 100%; position: relative">
+     </div>
+
+     <div id="cut">
+       <img id= 'cutButton' src="./css/images/buttonNext2.svg" onclick="newCombi(1)"  style="width: 40%; position: relative"></img>
+     </div>
+
+    </div>
+
+
+
+</div>
+
+
+     </div>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+  <!--<footer>
+  <p><a href="mailto:luc.illien.pro@gmail.com">luc.illien.pro@gmail.com</a> copyright: eurl OP's</p>
+</footer>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='./javascript/script_slideshows.js' type="text/javascript"></script>
+
+</body>
+</html>
